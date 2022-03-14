@@ -1,0 +1,12 @@
+# ignore everything ...
+*
+
+# ... except itself
+!.gitignore
+
+# ... except the rpm spec file
+!*.spec
+
+# ... except possible source files
+!*.tar.gz
+!*.tar.xz
