@@ -26,7 +26,6 @@ iconv --from-code=ISO-8859-1 --to-code=UTF-8 --output=THANKS THANKS.old
 %configure
 %make_build
 
-
 %install
 %make_install
 rm %{buildroot}/%{_infodir}/dir
@@ -42,8 +41,6 @@ make check
 
 %license COPYING
 %doc AUTHORS ChangeLog TODO NEWS README THANKS
-
-
 
 %changelog
 * Mon Mar 14 2022 th1nhhdk <th1nhhdk@tutanota.com>
