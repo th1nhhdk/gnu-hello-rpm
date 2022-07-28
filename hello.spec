@@ -1,5 +1,5 @@
 Name:           hello
-Version:        2.12
+Version:        2.12.1
 Release:        1%{?dist}
 Summary:        Prints a friendly greeting
 
@@ -43,5 +43,8 @@ make check
 %doc AUTHORS ChangeLog TODO NEWS README THANKS
 
 %changelog
-* Mon Mar 14 2022 th1nhhdk <th1nhhdk@tutanota.com>
+* Thu Jul 28 2022 th1nhhdk <th1nhhdk@tutanota.com> - 2.12.1-1
+- Updated to 2.12.1
+
+* Mon Mar 14 2022 th1nhhdk <th1nhhdk@tutanota.com> - 2.12-1
 - Phiên bản đầu tiên của gói phần mềm 

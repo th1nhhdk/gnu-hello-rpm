@@ -1,9 +1,18 @@
-# gnu-hello-rpm
-## My first rpm (Fedora 35) package :D
+# gnu-hello-spec
+## rpm spec package template (Fedora Linux 36)
 
 ## How to build
-### https://docs.fedoraproject.org/en-US/package-maintainers/Installing_Packager_Tools/
-`fedpkg --release f35 mockbuild`
+```
+# dnf install fedora-packager fedora-review
+# usermod -a -G mock <your username>
+$ cd ..
+$ mv gnu-hello-spec hello
+$ cd hello
+$ fedpkg --release f36 mockbuild
+```
 
-## How to check spec file (Build first!!!)
-`rpmlint hello.spec ./results_hello/2.12/1.fc35/hello-2.12-*.{x86_64,src}.rpm`
+## How to check spec file
+`rpmlint hello.spec`
+
+(or after build)
+`rpmlint hello.spec results_hello/2.12.1/1.fc36/hello-2.12.1*.rpm`
